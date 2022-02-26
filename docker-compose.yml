@@ -1,0 +1,9 @@
+version: '3.5'
+services:
+  micronautguide:
+    restart: on-failure
+    build:
+      context: ./
+    ports:
+      - '8080:8080'
+    container_name: micronautguide

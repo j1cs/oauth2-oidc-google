@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: example.micronaut
+testFramework: junit
+sourceLanguage: java
+buildTool: maven
+features: [annotation-api, app-name, graalvm, http-client, jackson-databind, java, java-application, junit, logback, maven, netty-server, readme, security-annotations, security-jwt, security-oauth2, shade, views-thymeleaf, yaml]

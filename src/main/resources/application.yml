@@ -1,0 +1,19 @@
+micronaut:
+  application:
+    name: micronautguide
+#tag::oauth2[]
+---
+micronaut:
+  security:
+    authentication: idtoken # <1>
+    oauth2:
+      clients:
+        google: # <2>
+          client-id: '${OAUTH_CLIENT_ID:218120752569-jjp4vc5jej1ma41ve28r43uhpg1h0r2m.apps.googleusercontent.com}'  # <3>
+          client-secret: '${OAUTH_CLIENT_SECRET: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}' # <4>
+          openid:
+            issuer: 'https://accounts.google.com' # <5>
+    endpoints:
+      logout:
+        get-allowed: true # <6>
+#end::oauth2[]
